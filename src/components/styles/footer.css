@@ -1,0 +1,107 @@
+.footer {
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-content {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Distribute items with space between them */
+  align-items: flex-start; /* Align items to the top */
+  gap: 2rem; /* Space between columns */
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  text-align: left;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Specific styling for the footer sections to ensure alignment */
+.footer-section {
+  flex: 1; /* Allow sections to grow and shrink */
+  min-width: 250px; /* Ensure a minimum width before wrapping */
+}
+
+/* To ensure the "middle" appearance for a specific section,
+   you'd apply a specific class to that section in your JSX.
+   For example, if the second section in your HTML has class "footer-middle-section" */
+.footer-middle-section {
+  /* This flex property helps it take available space and push other items */
+  flex-grow: 1;
+  /* On larger screens, ensure it tries to stay central */
+  text-align: center;
+}
+
+/* Adjust for smaller screens: stack sections */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack vertically on small screens */
+    align-items: center; /* Center items when stacked */
+  }
+
+  .footer-section {
+    margin-bottom: 2rem; /* Add space between stacked sections */
+    width: 100%; /* Take full width when stacked */
+    text-align: center; /* Center text when stacked */
+  }
+
+  .footer-section:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.footer-section .tagline {
+  color: var(--accent-red);
+  font-weight: 600;
+  margin-top: -0.5rem;
+  font-size: 1.05rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-section ul li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: var(--text-primary);
+}
+
+.copyright {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.copyright p {
+  margin: 0.5rem 0;
+}

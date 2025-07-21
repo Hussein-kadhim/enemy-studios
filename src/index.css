@@ -1,13 +1,62 @@
+/* src/index.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+:root {
+  --bg-primary: #121212; /* Charcoal Black */
+  --text-primary: #e0e0e0; /* Off-White */
+  --text-secondary: #a0a0a0; /* Soft Grey */
+  --accent-red: #cf6679; /* Deep Red */
+  --bg-card: #1f1f1f; /* Dark Grey for cards/sections */
+  --border-subtle: #333333; /* Subtle Grey for borders */
+  --navbar-height: 6rem; /* Define navbar height as a variable */
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  padding: 4rem 2rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--accent-red);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
