@@ -17,25 +17,6 @@
   margin: 0 auto 3rem auto;
   line-height: 1.6;
 }
-.contact {
-  background-color: var(--bg-primary);
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.contact h2 {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
-}
-
-.contact .intro-text {
-  font-size: 1.1rem;
-  color: var(--text-secondary);
-  max-width: 800px;
-  margin: 0 auto 3rem auto;
-  line-height: 1.6;
-}
 
 .contact-container {
   display: flex;
@@ -43,17 +24,8 @@
   gap: 3rem;
   max-width: 1000px;
   margin: 0 auto;
-  align-items: center; /* Center content */
+  align-items: center;
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .contact-container {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: left;
-  }
 }
 
 .contact-form {
@@ -61,7 +33,7 @@
   padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  min-width: 300px;
+  min-width: 250px;
   text-align: center;
 }
 
@@ -132,27 +104,12 @@
   text-align: left;
 }
 
-@media (min-width: 768px) {
-  .contact-container {
-    flex-direction: row; /* Side-by-side on larger screens */
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-}
-
 .contact-form {
   background-color: var(--bg-card);
   padding: 2.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   flex: 2;
-  min-width: 300px;
+  min-width: 250px;
   place-self: center;
 }
-
-/* You could add icons here using Font Awesome or similar */
-/* .social-media-links ul li a::before {
-  font-family: 'Font Awesome 5 Brands'; 
-  content: '\f099'; // Example for Twitter icon
-  color: var(--text-secondary);
-} */

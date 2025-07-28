@@ -1,6 +1,11 @@
 import React from "react";
 import "../styles/contact.css";
 
+// Font Awesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDiscord, faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 function Contact() {
   return (
     <section id="contact" className="contact">
@@ -12,48 +17,39 @@ function Contact() {
       </p>
 
       <div className="contact-container">
-        <div className="contact-form">
-          <a href="mailto:support@enemystudios.com" className="mailto-button">
-            Send Email
-          </a>
-        </div>
-
         <div className="social-media-links">
           <h3>Connect With Us</h3>
           <ul>
             <li>
               <a
-                href="https://discord.gg/yourlink"
+                href="https://discord.gg/gykk4TEzpz"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Join our Discord
+                <FontAwesomeIcon icon={faDiscord} /> Join our Discord
               </a>
             </li>
             <li>
               <a href="mailto:support@enemystudios.com">
-                Email: support@enemystudios.com
+                <FontAwesomeIcon icon={faEnvelope} /> support@enemystudios.com
               </a>
             </li>
             <li>
               <a
-                href="https://twitter.com/yourtwitter"
+                href="https://x.com/do_Enemy"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter/X
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/yourinstagram"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
+                <FontAwesomeIcon icon={faXTwitter} /> Twitter/X
               </a>
             </li>
           </ul>
+        </div>
+        <div className="contact-form">
+          <h3>Get in Touch</h3>
+          <a href="mailto:support@enemystudios.com" className="mailto-button">
+            Send Email
+          </a>
         </div>
       </div>
     </section>
