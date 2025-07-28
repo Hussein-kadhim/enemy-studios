@@ -1,31 +1,31 @@
 import React from "react";
 import "../styles/experiences.css";
 import raceClicker from "../../assets/images/Race_Clicker.png";
-import obbyTycoon from "../../assets/images/obby_Tycoon.png";
-import escapeMadness from "../../assets/images/Escape_Madness.png";
+import strongSimulator from "../../assets/images/strong_simulator.png";
+import creepyCrawlers from "../../assets/images/creepy_crawlers.png";
 
 function Experiences() {
   const games = [
     {
       title: "Race Clicker",
       image: raceClicker,
-      totalVisits: "18.2M",
-      groupMembers: "124K",
-      url: "https://www.roblox.com/games/111111111/Race-Clicker",
+      totalVisits: "991.6M+",
+      groupMembers: "7M",
+      url: "https://www.roblox.com/games/9285238704/UPD-Race-Clicker",
     },
     {
-      title: "Obby Tycoon",
-      image: obbyTycoon,
-      totalVisits: "5.6M",
-      groupMembers: "62K",
-      url: "https://www.roblox.com/games/222222222/Obby-Tycoon",
+      title: "Strong Simulator",
+      image: strongSimulator,
+      totalVisits: "32.6M+",
+      groupMembers: "373K+",
+      url: "https://www.roblox.com/games/8876694280/Strong-Simulator-UPDATE",
     },
     {
-      title: "Escape Madness",
-      image: escapeMadness,
-      totalVisits: "3.9M",
-      groupMembers: "47K",
-      url: "https://www.roblox.com/games/333333333/Escape-Madness",
+      title: "Creepy Crawlers",
+      image: creepyCrawlers,
+      totalVisits: "30M+",
+      groupMembers: "26k+",
+      url: "https://www.roblox.com/games/13251504936/Creepy-Crawlers",
     },
   ];
 
