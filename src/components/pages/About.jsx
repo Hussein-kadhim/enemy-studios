@@ -41,7 +41,7 @@ function About() {
         <h2>Meet the Team</h2>
         <div className="team-grid">
           <div className="team-member-card">
-            <h3>Qskull</h3>
+            <h3>SkullDev</h3>
             <p className="role">CEO</p>
             <p className="bio">
               Leads the overall vision and strategic direction of Enemy Studios,
@@ -49,15 +49,7 @@ function About() {
             </p>
           </div>
           <div className="team-member-card">
-            <h3>[Name]</h3>
-            <p className="role">COO</p>
-            <p className="bio">
-              Manages daily operations and resource allocation, ensuring smooth
-              development cycles and efficient team collaboration.
-            </p>
-          </div>
-          <div className="team-member-card">
-            <h3>[Name]</h3>
+            <h3>Scrolvy</h3>
             <p className="role">Project Manager</p>
             <p className="bio">
               Oversees game development projects from concept to launch, keeping
@@ -65,27 +57,12 @@ function About() {
             </p>
           </div>
           <div className="team-member-card">
-            <h3>[Name]</h3>
+            <h3>Zyno</h3>
             <p className="role">Lead Developer</p>
             <p className="bio">
-              Drives the technical architecture and coding standards, creating
-              robust and performant game systems.
-            </p>
-          </div>
-          <div className="team-member-card">
-            <h3>[Name]</h3>
-            <p className="role">UI/UX Designer</p>
-            <p className="bio">
-              Crafts intuitive and visually stunning user interfaces, enhancing
-              player immersion and usability.
-            </p>
-          </div>
-          <div className="team-member-card">
-            <h3>[Names]</h3>
-            <p className="role">Marketing & Staff</p>
-            <p className="bio">
-              Engages with our community, manages social media, and ensures our
-              games reach a wider audience.
+              Built and maintains the official website for Enemy Studios.
+              Responsible for continuous updates, improvements, and ensuring the
+              platform reflects the studio's evolving vision.
             </p>
           </div>
         </div>
