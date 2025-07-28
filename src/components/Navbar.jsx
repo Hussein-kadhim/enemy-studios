@@ -3,6 +3,7 @@ import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import "../index.css";
 import "./styles/navbar.css";
+import enemyLogo from "../../src/assets/images/enemy_logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +17,9 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <h1>Enemy</h1>
+        <HashLink smooth to="/#home">
+          <img src={enemyLogo} alt="Enemy Studios Logo" className="logo" />
+        </HashLink>
         <button
           className={`hamburger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
