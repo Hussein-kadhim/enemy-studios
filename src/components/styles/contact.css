@@ -90,10 +90,6 @@
   gap: 0.8rem;
 }
 
-.social-media-links ul li a:hover {
-  color: var(--accent-red);
-}
-
 .contact-container {
   display: flex;
   flex-direction: column;
