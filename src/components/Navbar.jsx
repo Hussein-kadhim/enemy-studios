@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import "../index.css";
@@ -25,9 +27,12 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
-          <span />
-          <span />
-          <span />
+          <FontAwesomeIcon
+            className="burger-icon"
+            icon={faBars}
+            size="2x"
+            color="#d32f2f"
+          />
         </button>
         <ul className="nav-links">
           <li>
